@@ -1,8 +1,10 @@
 from os import link
-from scrapy.spiders import CrawlSpider, Rule, Spider
-from scrapy.linkextractors import LinkExtractor
-from scrapy.http import Request
+
 from essay_spider.items import Volume
+from scrapy.http import Request
+from scrapy.linkextractors import LinkExtractor
+from scrapy.spiders import CrawlSpider, Rule, Spider
+
 
 def parse_link(response):
     ...
